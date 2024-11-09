@@ -92,7 +92,6 @@ func helpCommand(bot *tgbotapi.BotAPI, message *tgbotapi.Message) {
 /poll - создать кастомный опрос
 /format - показать форматированный текст
 /quickbutton - быстрая кнопка
-Попробуйте также использовать inline mode (введите @username_бота в поле ввода).
 `
     msg := tgbotapi.NewMessage(message.Chat.ID, helpText)
     bot.Send(msg)
